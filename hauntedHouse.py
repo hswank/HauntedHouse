@@ -18,7 +18,7 @@ def chooseEntrance():
         entrance = 2
 
     gameOver = random.randint(1, 2)
-    time.sleep(3)
+    time.sleep(2)
     if entrance == gameOver:
         print('''You open the door and step inside. Immediately you trip
 over an upturned corner of rug and fall into a trap door. The sound of
@@ -30,8 +30,6 @@ on one end and a mysterious fog at the other end. You get the feeling
 you're being watched and get the overwhelming urge to run back out the
 door as fast as you can, living to see another day.''')
         
-
-def 
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y':
     displayIntro()
