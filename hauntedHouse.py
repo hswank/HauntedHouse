@@ -17,12 +17,25 @@ def chooseEntrance():
     else:
         entrance = 2
 
-    return entrance
+    gameOver = random.randint(1, 2)
+    time.sleep(3)
+    if entrance == gameOver:
+        print('''You open the door and step inside. Immediately you trip
+over an upturned corner of rug and fall into a trap door. The sound of
+howling fills yours ears as a pack of rabid dogs descend on you and turn
+you into their meal. Rest in pieces.''')
+    else:
+        print('''You open the door and find an empty corridor with blood
+on one end and a mysterious fog at the other end. You get the feeling 
+you're being watched and get the overwhelming urge to run back out the
+door as fast as you can, living to see another day.''')
+        
 
-
+def 
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y':
     displayIntro()
+    chooseEntrance()
 
     print('Do you want to play again? (yes or no)')
     playAgain = input()
